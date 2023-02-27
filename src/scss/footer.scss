@@ -1,0 +1,126 @@
+%contacts-white-text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #121212;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // &::before {
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     bottom: 103px;
+    //     background-color: #232323;
+    //     height: 1px;
+    //     width: 1440px;
+    //     left: 0;
+    // }
+
+    .contacts {
+        padding: 72px 123px;
+        display: grid;
+        grid-template-areas:
+            'header header header'
+            'whatsApp email phone'
+            'telegram adress button'
+        ;
+        grid-row-gap: 70px;
+
+
+
+        h2 {
+            grid-area: header;
+            background: rgb(22, 22, 22);
+            background: linear-gradient(20deg, rgb(0, 0, 0) 9%, rgba(228, 228, 228, 1) 19%, rgba(252, 252, 252, 1) 41%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            // text-shadow: 0px 0px 0px rgba(195, 195, 195, 0.6);
+            font-weight: normal;
+            text-align: left;
+            font-size: 40px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+
+        }
+
+        h6 {
+            @include header6-grey;
+        }
+
+        .whatsApp {
+            @extend %contacts-white-text;
+            grid-area: whatsApp;
+        }
+
+        .telegram {
+            @extend %contacts-white-text;
+            grid-area: telegram;
+        }
+
+        .email {
+            @extend %contacts-white-text;
+            color: #FFCF7A;
+            grid-area: email;
+        }
+
+        .adress {
+            @extend %contacts-white-text;
+            grid-area: adress;
+        }
+
+        .phone-number {
+            @extend %contacts-white-text;
+            font-weight: 200;
+            font-size: 36px;
+            grid-area: phone;
+            margin-left: 50px;
+        }
+
+        .contact-manager button {
+            margin-top: 30px;
+            margin-left: 50px;
+            @extend %contacts-white-text;
+            font-size: 18px;
+            grid-area: button;
+            width: 279px;
+            height: 60px;
+            border: 1px solid #CEB787;
+            background-color: transparent;
+        }
+
+    }
+
+    .basement {
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        padding: 72px 123px;
+        border-top: 1px solid #232323;
+        height: 103px;
+        margin-top: 50px;
+
+        .left-block {
+            width: 80%;
+            display: flex;
+            column-gap: 43px;
+
+
+            &__grey-span {
+                margin-left: 67px;
+                color: #6D6D6D;
+                font-size: 14px;
+            }
+        }
+
+        .users-agreement {
+            @include CENTER;
+            color: #6D6D6D;
+        }
+
+    }
+}

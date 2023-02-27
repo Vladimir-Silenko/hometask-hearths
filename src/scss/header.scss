@@ -1,0 +1,95 @@
+header {
+    position: relative;
+    z-index: 2;
+    background-image: url(../assets/imgs/header-flamelight.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 500px 40px;
+
+    .header-nav {
+        &__list {
+            width: 436px;
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 30px;
+            margin-right: 61px;
+
+
+        }
+
+        &__listEl {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: #6D6D6D;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #FFCF7A;
+                }
+            }
+
+        }
+
+        &__call-btn {
+            width: 50px;
+            height: 50px;
+            @include CENTER;
+            background-color: #ECCF94;
+            border: none;
+            border-radius: 2px;
+        }
+    }
+
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 202px;
+        color: #fff;
+        background-image: url(../assets/imgs/kamin-header.png);
+        background-repeat: no-repeat;
+        background-position: 100%;
+
+        &__header {
+            font-size: 64px;
+            font-weight: 250;
+            line-height: 80px;
+            letter-spacing: 5%;
+            margin-bottom: 29px;
+            text-transform: uppercase;
+            background: rgb(65, 65, 65);
+            @include HEADER-BCKG;
+        }
+
+        &__price {
+            margin-bottom: 86px;
+            font-size: 36px;
+            font-weight: 300;
+            color: #FFCF7A;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            column-gap: 154px;
+        }
+
+        &__iconsEl {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+
+            span {
+                text-align: center;
+                line-height: 22px;
+            }
+        }
+    }
+}

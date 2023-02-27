@@ -1,0 +1,45 @@
+.smart {
+    position: relative;
+    height: 630px;
+    background-image: url(../assets/imgs/kamin-speakers.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20%;
+
+    &__header {
+        background: rgb(51, 51, 51);
+        background: linear-gradient(11deg, rgb(0, 0, 0) 24%, rgba(232, 232, 232, 1) 68%, rgba(252, 252, 252, 1) 100%);
+        text-align: center;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        font-weight: 250;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 33px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    span {
+        position: absolute;
+        top: 57%;
+    }
+
+    .mi {
+        // top: 57%;
+        right: 170px;
+    }
+
+    .yandex {
+        left: 210px;
+    }
+}

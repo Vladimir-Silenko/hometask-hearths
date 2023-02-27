@@ -1,0 +1,24 @@
+.expirience {
+    margin-top: 130px;
+
+    h3 {
+        margin-top: 90px;
+        @include HEADER-BCKG;
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .content-area {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+
+        &__item {
+            margin-top: 50px;
+            @include Content-area;
+            width: 370px;
+            height: 267px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import 'reset.scss';
+@import 'mixins.scss';
+
+@font-face {
+    font-family: 'Scania Sans CY ';
+    src: url('../assets/fonts/ScaniaSansCYHeadline-Regular/ScaniaSansCYHeadline-Regular.ttf') format('truetype'),
+        url('../assets/fonts/ScaniaSansCYHeadline-Regular/.woff2') format('woff2'),
+        url('../assets/fonts/ScaniaSansCYHeadline-Regular/.woff') format('woff'),
+    ;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lab Grotesque';
+    src: url('../assets/fonts/LabGrotesque-Light/LabGrotesque-Light.ttf') format('truetype'),
+        url('../assets/fonts/LabGrotesque-Light/LabGrotesque-Light.woff2') format('woff2'),
+        url('../assets/fonts/LabGrotesque-Light/LabGrotesque-Light.woff') format('woff'),
+    ;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lab Grotesque';
+    src: local('Lab Grotesque Thin'), local('Lab-Grotesque-Thin'),
+        url('../assets/fonts/LabGrotesque-Thin/LabGrotesque-Thin.') format('woff2'),
+        url('../assets/fonts/LabGrotesque-Thin/LabGrotesque-Thin..woff') format('woff'),
+        url('../assets/fonts/LabGrotesque-Thin/LabGrotesque-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Lab Grotesque';
+}
+
+// body {}
+
+.container {
+    width: 1440px;
+    padding: 76px 143px;
+    background-color: #1d1d1e;
+
+    .header-shadow {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    // background-image: url('../assets/imgs/gradient-layer.png');
+    // background-size: contain;
+    @import 'header.scss';
+    @import 'banner-2.scss';
+    @import 'fill.scss';
+    @import 'smartFire.scss';
+    @import 'items.scss';
+    @import 'catalog-link.scss';
+    @import 'expirience.scss';
+    @import 'constructor.scss';
+}
+
+@import 'footer.scss';

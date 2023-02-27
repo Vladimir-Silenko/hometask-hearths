@@ -1,0 +1,27 @@
+.catalog-link {
+
+    @include CENTER;
+    flex-direction: column;
+    row-gap: 49px;
+    margin-top: 106px;
+
+    &__header {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 200;
+    }
+
+    &__btn {
+        @include orange-btn;
+        box-shadow: 0 0 275px 71px rgba(255, 207, 122, 0.37);
+        -webkit-box-shadow: 0 25px 275px 21px rgba(255, 207, 122, 0.37);
+        -moz-box-shadow: 0 0 275px 21px rgba(255, 207, 122, 0.37);
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+
+        }
+    }
+}

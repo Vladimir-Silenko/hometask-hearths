@@ -1,0 +1,109 @@
+article {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        position: absolute;
+        z-index: 1;
+        right: 400px;
+        content: url(../assets/imgs/small-shadow.png);
+        opacity: 0.6;
+    }
+
+    .items {
+        width: 100%;
+        display: grid;
+        grid-column-gap: 80px;
+        grid-row-gap: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "fuel-tank hearth"
+            "turnkey-solutions accesoires"
+        ;
+        position: relative;
+        z-index: 2;
+
+
+        h4 {
+            color: #fff;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            color: #fff;
+        }
+
+        .underlined {
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            line-height: 27px;
+            margin-bottom: 20px;
+
+            &::after {
+                display: block;
+                content: '';
+                width: 28%;
+                position: absolute;
+                margin-right: 30px;
+                border-top: 1px solid #FFCF7AB8;
+                border-right: 1px solid #FFCF7AB8;
+                height: 40px;
+                transform: scale(0.9) skew(32deg);
+                -webkit-transform: scale(0.9) skew(32deg);
+                -moz-transform: scale(0.9) skew(32deg);
+
+            }
+        }
+
+        h5 {
+            color: #757575;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        .variants {
+            margin-left: 25px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 30px;
+            color: #fff;
+
+            span {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+            }
+        }
+
+        .content-area {
+            margin-top: 50px;
+            @include Content-area
+        }
+
+        &__fuel-tank {
+
+            grid-area: fuel-tank;
+        }
+
+        &__hearth {
+            grid-area: hearth;
+        }
+
+        &__turnkey-solutions {
+            grid-area: turnkey-solutions;
+        }
+
+        &__accesoires {
+            grid-area: accesoires;
+        }
+    }
+}
